@@ -32,7 +32,7 @@ export default async function Home({
             <h1 className="text-4xl font-semibold tracking-tight">Yan Gurevich</h1>
             <div className="flex items-center gap-2">
               <a
-                href="mailto:yan@vikng.dev"
+                href="mailto:yan@wolfe.life"
                 aria-label="Send email"
                 className="group relative inline-flex size-9 items-center justify-center rounded-md border bg-background text-foreground hover:bg-muted"
               >
@@ -41,7 +41,7 @@ export default async function Home({
                   role="tooltip"
                   className="pointer-events-none absolute -bottom-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md border bg-background px-2 py-1 text-[10px] text-foreground opacity-0 shadow-sm transition-opacity group-hover:opacity-100"
                 >
-                  yan@vikng.dev
+                  yan@wolfe.life
                 </span>
               </a>
               <a
