@@ -12,7 +12,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 // (see MAX_MIRROR_DEPTH in project-list). Canonical keeps the ?d= variants
 // from being indexed as duplicates.
 export const metadata: Metadata = {
-  alternates: { canonical: "https://vikng.dev/" },
+  alternates: { canonical: "https://wolfe.life/" },
 };
 
 export default async function Home({
@@ -29,7 +29,7 @@ export default async function Home({
       <main className="mx-auto w-full max-w-4xl flex flex-col gap-10">
         <header className="flex flex-col gap-2">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-semibold tracking-tight">Yan Gurevich</h1>
+            <h1 className="text-4xl font-semibold tracking-tight">Yan Wolfe</h1>
             <div className="flex items-center gap-2">
               <a
                 href="mailto:yan@wolfe.life"
@@ -92,7 +92,7 @@ export default async function Home({
 
       <footer className="row-start-2 mt-12 text-sm text-muted-foreground">
         <div className="mx-auto w-full max-w-4xl flex items-center justify-between">
-          <span>© {CURRENT_YEAR} vikng.dev</span>
+          <span>© {CURRENT_YEAR} wolfe.life</span>
         </div>
         <div id="definition-1" className="mx-auto mt-4 w-full max-w-4xl text-sm text-muted-foreground">
           <span className="font-semibold text-foreground">

@@ -37,7 +37,7 @@ function SelfPreviewContent({ depth, inView }: { depth: number; inView: boolean 
     return (
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 text-muted-foreground">
         <InfinityIcon className="size-6" />
-        <span className="text-xs font-medium">vikng.dev</span>
+        <span className="text-xs font-medium">wolfe.life</span>
       </div>
     );
   }

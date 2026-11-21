@@ -244,7 +244,7 @@ export const projects: Project[] = [
     icon: <Boxes className="size-4" />,
   },
   {
-    title: "vikng.dev",
+    title: "wolfe.life",
     href: "/",
     description: "this",
     status: "in production",

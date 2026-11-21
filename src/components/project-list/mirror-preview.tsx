@@ -2,7 +2,7 @@
 
 import * as React from "react";
 
-// The vikng.dev card embeds the live home page recursively. On desktop (≥640px)
+// The wolfe.life card embeds the live home page recursively. On desktop (≥640px)
 // the iframe sits in the standard landscape card slot like every other project —
 // no device shell; hall-of-mirrors aligns because desktop viewports are roughly
 // landscape. On mobile the phone-shaped device mockup sits beside the title/data
@@ -109,7 +109,7 @@ function DesktopMirror({ depth }: { depth: number }) {
         <iframe
           ref={iframeRef}
           src={`/?d=${depth + 1}`}
-          title="Live recursive preview of vikng.dev"
+          title="Live recursive preview of wolfe.life"
           tabIndex={-1}
           aria-hidden
           onLoad={syncInitialScroll}
@@ -189,7 +189,7 @@ function MobileMirror({ depth }: { depth: number }) {
             <iframe
               ref={iframeRef}
               src={`/?d=${depth + 1}`}
-              title="Live recursive preview of vikng.dev"
+              title="Live recursive preview of wolfe.life"
               tabIndex={-1}
               aria-hidden
               onLoad={syncInitialScroll}

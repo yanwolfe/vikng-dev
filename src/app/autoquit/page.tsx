@@ -33,7 +33,7 @@ async function getLatestRelease(): Promise<ReleaseInfo> {
       {
         headers: {
           Accept: "application/vnd.github+json",
-          "User-Agent": "vikng.dev",
+          "User-Agent": "wolfe.life",
         },
       },
     );
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "AutoQuit - automatic quit for apps with no windows",
     description:
       "A tiny menu bar utility that closes macOS apps the instant their last window closes.",
-    url: "https://vikng.dev/autoquit",
+    url: "https://wolfe.life/autoquit",
     type: "website",
     images: [
       { url: "/projects/autoquit.png", width: 1024, height: 1024, alt: "AutoQuit app icon" },
@@ -90,7 +90,7 @@ export default async function AutoQuitPage() {
               className="size-4 transition-transform group-hover:-translate-x-0.5"
               aria-hidden="true"
             />
-            <span>vikng.dev</span>
+            <span>wolfe.life</span>
           </Link>
           <ThemeToggle />
         </header>
@@ -195,7 +195,7 @@ export default async function AutoQuitPage() {
 
       <footer className="row-start-2 mt-12 text-sm text-muted-foreground">
         <div className="mx-auto w-full max-w-4xl flex items-center justify-between">
-          <span>© {new Date().getFullYear()} vikng.dev</span>
+          <span>© {new Date().getFullYear()} wolfe.life</span>
         </div>
       </footer>
     </div>
