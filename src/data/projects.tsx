@@ -132,10 +132,10 @@ export const projects: Project[] = [
   },
   {
     title: "Flowcost",
-    href: "https://flowcost.co",
+    href: "https://github.com/yanwolfe/flowcost",
     opensourceHref: "https://github.com/yanwolfe/flowcost",
     description: "Expense Tracker for Digital Nomads",
-    status: "in production",
+    status: "sunset",
     techHighlights: [
       { label: "CloudFlare", icon: <SiCloudflare className="size-5" /> },
       { label: "WhatsApp Business", icon: <SiWhatsapp className="size-4" /> },
