@@ -60,7 +60,7 @@ export default async function Home({
                 </span>
               </a>
               <a
-                href="https://www.linkedin.com/in/yan-gurevich/"
+                href="https://www.linkedin.com/in/yanwolfe/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open LinkedIn profile"
@@ -71,7 +71,7 @@ export default async function Home({
                   role="tooltip"
                   className="pointer-events-none absolute -bottom-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md border bg-background px-2 py-1 text-[10px] text-foreground opacity-0 shadow-sm transition-opacity group-hover:opacity-100"
                 >
-                  linkedin.com/in/yan-gurevich
+                  linkedin.com/in/yanwolfe
                 </span>
               </a>
               <div className="mx-2 h-7 w-px bg-foreground/30" />
