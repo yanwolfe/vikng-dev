@@ -13,6 +13,9 @@ import {
   Globe,
   Code2,
   Terminal,
+  Waves,
+  Network,
+  Users,
 } from "lucide-react";
 import {
   SiReact,
@@ -36,6 +39,12 @@ import {
   SiTypescript,
   SiGoogleplay,
   SiAudacity,
+  SiRust,
+  SiBevy,
+  SiHomebrew,
+  SiAnthropic,
+  SiOpenai,
+  SiSteam,
 } from "react-icons/si";
 import { MacosIcon } from "@/components/icons/macos-icon";
 import { SwiftIcon } from "@/components/icons/swift-icon";
@@ -166,6 +175,39 @@ export const projects: Project[] = [
     icon: <Wallet className="size-4" />,
   },
   {
+    title: "Sluice",
+    href: "https://sluice.vikng.dev",
+    opensourceHref: "https://github.com/yanwolfe/sluice",
+    description: "Pools AI coding subscriptions behind one local address",
+    status: "in production",
+    imageFit: "contain",
+    techHighlights: [
+      { label: "Swift", icon: <SwiftIcon className="size-5" /> },
+      { label: "MacOS", icon: <MacosIcon className="size-5" /> },
+      { label: "Local proxy", icon: <Network className="size-5" /> },
+    ],
+    allTechnologies: [
+      { label: "Swift", icon: <SwiftIcon className="size-5" /> },
+      { label: "MacOS", icon: <MacosIcon className="size-5" /> },
+      { label: "Local proxy", icon: <Network className="size-5" /> },
+      { label: "Claude Code", icon: <SiAnthropic className="size-5" /> },
+      { label: "Codex", icon: <SiOpenai className="size-5" /> },
+      { label: "Homebrew", icon: <SiHomebrew className="size-5" /> },
+      { label: "Cloudflare Workers", icon: <CloudflareWorkersIcon className="size-5" /> },
+    ],
+    roles: [
+      "End to end development",
+      "Menu bar app and command line tool",
+      "Signed, notarized releases through Homebrew",
+    ],
+    achievements: [
+      "One local address for Claude Code and Codex",
+      "Routes each request to the account that can answer it",
+    ],
+    images: [{ src: "/projects/sluice.png", alt: "Sluice macOS app icon", theme: "any" }],
+    icon: <Waves className="size-4" />,
+  },
+  {
     title: "AutoQuit",
     href: "/autoquit",
     opensourceHref: "https://github.com/yanwolfe/AutoQuit",
@@ -186,9 +228,41 @@ export const projects: Project[] = [
     icon: <MacosIcon className="size-4" />,
   },
   {
+    title: "Overmatch",
+    href: "https://github.com/yanwolfe/overmatch",
+    opensourceHref: "https://github.com/yanwolfe/overmatch",
+    description: "Realistic 3D Multiplayer Tank Game",
+    status: "in development",
+    techHighlights: [
+      { label: "Rust", icon: <SiRust className="size-5" /> },
+      { label: "Bevy", icon: <SiBevy className="size-5" /> },
+      { label: "Multiplayer", icon: <Users className="size-5" /> },
+    ],
+    allTechnologies: [
+      { label: "Rust", icon: <SiRust className="size-5" /> },
+      { label: "Bevy", icon: <SiBevy className="size-5" /> },
+      { label: "Multiplayer", icon: <Users className="size-5" /> },
+      { label: "Dedicated servers", icon: <Server className="size-5" /> },
+      { label: "AWS", icon: <SiAmazon className="size-5" /> },
+      { label: "Cloudflare Workers", icon: <CloudflareWorkersIcon className="size-5" /> },
+      { label: "Steam", icon: <SiSteam className="size-5" /> },
+    ],
+    roles: [
+      "End to end development",
+      "Physics, ballistics and damage simulation",
+      "Authoritative server netcode",
+    ],
+    achievements: [
+      "Destructible buildings and module-level tank damage",
+      "Dedicated authoritative servers for 30-tank battles",
+    ],
+    images: [{ src: "/projects/overmatch.jpg", alt: "Three tanks firing in Overmatch", theme: "any" }],
+    icon: <Gamepad2 className="size-4" />,
+  },
+  {
     title: "Ironfront",
     description: "Android Tank Game",
-    status: "in development",
+    status: "sunset",
     href: "https://github.com/yanwolfe/ironfront",
     opensourceHref: "https://github.com/yanwolfe/ironfront",
     techHighlights: [

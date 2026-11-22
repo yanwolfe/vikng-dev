@@ -178,22 +178,51 @@ function ProjectItem({ project, priority, expanded, onToggle, index, depth }: Pr
   );
 }
 
+const activeProjects = projects.filter((p) => p.status !== "sunset");
+const sunsetProjects = projects.filter((p) => p.status === "sunset");
+
 export function ProjectList({ depth = 0 }: { depth?: number }) {
   const [openProject, setOpenProject] = React.useState<string | null>(null);
+  const [showSunset, setShowSunset] = React.useState(false);
+
+  const renderItems = (items: Project[], offset: number) =>
+    items.map((p, i) => (
+      <ProjectItem
+        key={p.title}
+        project={p}
+        priority={offset + i === 0}
+        expanded={openProject === p.title}
+        onToggle={() => setOpenProject((current) => (current === p.title ? null : p.title))}
+        index={i}
+        depth={depth}
+      />
+    ));
 
   return (
-    <ul className="flex flex-col gap-12">
-      {projects.map((p, i) => (
-        <ProjectItem
-          key={p.title}
-          project={p}
-          priority={i === 0}
-          expanded={openProject === p.title}
-          onToggle={() => setOpenProject((current) => (current === p.title ? null : p.title))}
-          index={i}
-          depth={depth}
-        />
-      ))}
-    </ul>
+    <div className="flex flex-col gap-12">
+      <ul className="flex flex-col gap-12">{renderItems(activeProjects, 0)}</ul>
+
+      {sunsetProjects.length > 0 ? (
+        <section className="flex flex-col gap-12">
+          <button
+            type="button"
+            onClick={() => setShowSunset((v) => !v)}
+            className="inline-flex items-center self-start text-lg font-medium text-foreground/80 hover:text-foreground"
+            aria-expanded={showSunset}
+            aria-controls="sunset-projects"
+          >
+            <ChevronDown
+              className={cn("mr-2 size-4 transition-transform duration-300", showSunset && "rotate-180")}
+            />
+            <span>Sunset projects ({sunsetProjects.length})</span>
+          </button>
+          {showSunset ? (
+            <ul id="sunset-projects" className="flex flex-col gap-12">
+              {renderItems(sunsetProjects, activeProjects.length)}
+            </ul>
+          ) : null}
+        </section>
+      ) : null}
+    </div>
   );
 }
