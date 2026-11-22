@@ -45,7 +45,7 @@ export default async function Home({
                 </span>
               </a>
               <a
-                href="https://github.com/yan-vikng-dev"
+                href="https://github.com/yanwolfe"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open GitHub profile"
@@ -56,7 +56,7 @@ export default async function Home({
                   role="tooltip"
                   className="pointer-events-none absolute -bottom-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md border bg-background px-2 py-1 text-[10px] text-foreground opacity-0 shadow-sm transition-opacity group-hover:opacity-100"
                 >
-                  github.com/yan-vikng-dev
+                  github.com/yanwolfe
                 </span>
               </a>
               <a

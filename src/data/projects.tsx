@@ -133,7 +133,7 @@ export const projects: Project[] = [
   {
     title: "Flowcost",
     href: "https://flowcost.co",
-    opensourceHref: "https://github.com/yan-vikng-dev/flowcost",
+    opensourceHref: "https://github.com/yanwolfe/flowcost",
     description: "Expense Tracker for Digital Nomads",
     status: "in production",
     techHighlights: [
@@ -168,7 +168,7 @@ export const projects: Project[] = [
   {
     title: "AutoQuit",
     href: "/autoquit",
-    opensourceHref: "https://github.com/yan-vikng-dev/AutoQuit",
+    opensourceHref: "https://github.com/yanwolfe/AutoQuit",
     description: "MacOS cleanup utility",
     status: "in production",
     imageFit: "contain",
@@ -189,8 +189,8 @@ export const projects: Project[] = [
     title: "Ironfront",
     description: "Android Tank Game",
     status: "in development",
-    href: "https://github.com/yan-vikng-dev/ironfront",
-    opensourceHref: "https://github.com/yan-vikng-dev/ironfront",
+    href: "https://github.com/yanwolfe/ironfront",
+    opensourceHref: "https://github.com/yanwolfe/ironfront",
     techHighlights: [
       { label: "Godot", icon: <SiGodotengine className="size-5" /> },
       { label: "Android", icon: <SiAndroid className="size-5" /> },

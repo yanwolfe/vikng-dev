@@ -6,11 +6,11 @@ import { AutoQuitDownloadCTA } from "@/components/autoquit-download-cta";
 import { BlueprintBackground } from "@/components/blueprint-background";
 import { ThemeToggle } from "@/components/theme-toggle";
 
-const REPO_OWNER = "yan-vikng-dev";
+const REPO_OWNER = "yanwolfe";
 const REPO_NAME = "AutoQuit";
 const REPO = `https://github.com/${REPO_OWNER}/${REPO_NAME}`;
 const LATEST_RELEASE = `${REPO}/releases/latest`;
-const BREW_COMMAND = "brew install --cask yan-vikng-dev/tap/autoquit";
+const BREW_COMMAND = "brew install --cask yanwolfe/tap/autoquit";
 
 // Floor values, baked into the HTML at build time. The client component
 // refreshes these on hydration via a browser-side fetch to the GitHub API,
